@@ -1,6 +1,5 @@
 # 중첩 된 라우트
 
-<vueschoollink href="https://vueschool.io/lessons/nested-routes" title="Learn about nested routes"></vueschoollink>
 
 일부 응용 프로그램의 UI는 여러 레벨에 걸쳐  깊이 중첩 된 컴포넌트로 구성됩니다. 이 경우 URL의 세그먼트가 중첩 된 컴포넌트의 구조에 일치 시키는 것은 매우 일반적입니다. 예를 들면 다음과 같습니다.
 

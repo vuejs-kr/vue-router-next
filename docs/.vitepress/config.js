@@ -309,6 +309,138 @@ const config = {
           },
         ],
       },
+      '/ko/': {
+        lang: 'ko-KRN',
+        label: '한국어',
+        selectText: '언어',
+        title: 'Vue Router',
+        description: 'Vue.js 공식 라우터',
+        nav: [
+          {
+            text: '가이드',
+            link: '/ko/guide/',
+          },
+          {
+            text: 'API 레퍼런스',
+            link: '/ko/api/',
+          },
+          {
+            text: 'v4.x',
+            items: [{ text: 'v3.x', link: 'https://router.vuejs.org/ko' }],
+          },
+          {
+            text: '변경내역',
+            link: 'https://github.com/vuejs/vue-router-next/blob/master/CHANGELOG.md',
+          },
+        ],
+
+        sidebar: [
+          {
+            text: '소개',
+            link: '/ko/introduction.html',
+          },
+          {
+            text: '설치',
+            link: '/ko/installation.html',
+          },
+          {
+            text: '핵심',
+            collapsable: false,
+            children: [
+              {
+                text: '시작하기',
+                link: '/ko/guide/',
+              },
+              {
+                text: '동적 경로 매칭',
+                link: '/ko/guide/essentials/dynamic-matching.html',
+              },
+              {
+                text: '경로 매칭 문법',
+                link: '/ko/guide/essentials/route-matching-syntax.html',
+              },
+              {
+                text: '중첩 경로',
+                link: '/ko/guide/essentials/nested-routes.html',
+              },
+              {
+                text: '네비게이션',
+                link: '/ko/guide/essentials/navigation.html',
+              },
+              {
+                text: '이름을 가지는 경로',
+                link: '/ko/guide/essentials/named-routes.html',
+              },
+              {
+                text: '이름을 가지는 뷰',
+                link: '/ko/guide/essentials/named-views.html',
+              },
+              {
+                text: '리다이렉트와 별칭',
+                link: '/ko/guide/essentials/redirect-and-alias.html',
+              },
+              {
+                text: 'props 전달하기',
+                link: '/ko/guide/essentials/passing-props.html',
+              },
+              {
+                text: '히스토리 모드',
+                link: '/ko/guide/essentials/history-mode.html',
+              },
+            ],
+          },
+          {
+            text: '고급',
+            collapsable: false,
+            children: [
+              {
+                text: '네비게이션 가드 ',
+                link: '/ko/guide/advanced/navigation-guards.html',
+              },
+              {
+                text: '경로 메타 필드',
+                link: '/ko/guide/advanced/meta.html',
+              },
+              {
+                text: '데이터 가져오기',
+                link: '/ko/guide/advanced/data-fetching.html',
+              },
+              {
+                text: '컴포지션 API',
+                link: '/ko/guide/advanced/composition-api.html',
+              },
+              {
+                text: '트랜지션',
+                link: '/ko/guide/advanced/transitions.html',
+              },
+              {
+                text: '스크롤',
+                link: '/ko/guide/advanced/scroll-behavior.html',
+              },
+              {
+                text: '지연 로딩',
+                link: '/ko/guide/advanced/lazy-loading.html',
+              },
+              {
+                text: 'RouterLink 확장하기',
+                link: '/ko/guide/advanced/extending-router-link.html',
+              },
+              {
+                text: '네비게이션 실패',
+                link: '/ko/guide/advanced/navigation-failures.html',
+              },
+              {
+                text: '동적 라우팅',
+                link: '/ko/guide/advanced/dynamic-routing.html',
+              },
+            ],
+          },
+          {
+            text: 'Vue2에서 이전하기',
+            link: '/ko/guide/migration/index.html',
+          },
+        ],
+      },
     },
   },
 }

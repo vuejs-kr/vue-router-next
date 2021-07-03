@@ -1,9 +1,5 @@
 # Different History modes
 
-<VueSchoolLink 
-  href="https://vueschool.io/lessons/history-mode"
-  title="Learn about the differences between Hash Mode and HTML5 Mode"
-/>
 
 The `history` option when creating the router instance allows us to choose among different history modes.
 

@@ -1,6 +1,5 @@
 # 다양한 히스토리 모드
 
-<vueschoollink href="https://vueschool.io/lessons/history-mode" title="Learn about the differences between Hash Mode and HTML5 Mode"></vueschoollink>
 
 `history` 옵션을 사용하면 다른 히스토리 모드 중에서 선택할 수 있습니다.
 

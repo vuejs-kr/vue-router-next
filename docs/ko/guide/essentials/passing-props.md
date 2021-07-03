@@ -1,6 +1,5 @@
 # Route 컴포넌트에 Prop 전달하기
 
-<vueschoollink href="https://vueschool.io/lessons/route-props" title="Learn how to pass props to route components"></vueschoollink>
 
 `$route` 를 사용하면 특정 URL에서만 사용할 수 있으므로 컴포넌트의 유연성을 제한하며,  경로와 긴밀하게 결합됩니다. `props` 옵션을 사용하여 이 동작을 분리 할 수 있습니다.
 

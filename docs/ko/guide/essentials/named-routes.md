@@ -1,6 +1,5 @@
 # 명명 된 경로
 
-<vueschoollink href="https://vueschool.io/lessons/named-routes" title="Learn about the named routes"></vueschoollink>
 
 `path` 와 함께 모든 `name` 을 제공 할 수 있습니다. 이것은 다음과 같은 장점이 있습니다.
 

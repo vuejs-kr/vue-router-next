@@ -1,6 +1,5 @@
 # 매개변수(Params)를 활용한 동적 라우트 매칭(Dynamic Route Matching)
 
-<vueschoollink href="https://vueschool.io/lessons/dynamic-routes" title="Learn about dynamic route matching with params"></vueschoollink>
 
 매우 자주 주어진 패턴의 경로를 동일한 컴포넌트에 매핑해야합니다. 예를 들어 모든 사용자에 대해 렌더링되어야하지만 사용자 ID가 다른 `User` 컴포넌트가 있을 수 있습니다. Vue Router 에서는 이를 달성하기 위해 경로의 동적 세그먼트를 사용할 수 있으며 이를 *param* 이라고합니다.
 
@@ -47,7 +46,6 @@ pattern | matched path | $route.params
 
 ## 매개변수(Params) 변경에 대한 반응
 
-<vueschoollink href="https://vueschool.io/lessons/reacting-to-param-changes" title="Learn how to react to param changes"></vueschoollink>
 
 매개 변수(params)와 함께 경로를 사용할 때 주의해야 할 점은 사용자가 `/users/johnny` 에서 `/users/jolyne ` 으로 이동 할 때 **&nbsp;동일한 컴포넌트 인스턴스가 재사용 된다는 것입니다. **두 경로 모두 동일한 컴포넌트를 렌더링하므로 이전 인스턴스를 삭제 한 다음 새 인스턴스를 만드는 것보다 더 효율적입니다. **그러나 이는 컴포넌트 수명주기 훅(hook)이 호출되지 않음을 의미하기도 합니다.**
 
@@ -81,7 +79,6 @@ const User = {
 
 ## 모두 캐치(Catch all) / 404 Not fount Route
 
-<vueschoollink href="https://vueschool.io/lessons/404-not-found-page" title="Learn how to make a catch all/404 not found route"></vueschoollink>
 
 일반 매개 변수(params)는 `/` 로 구분된 URL 조각 사이의 문자만 일치합니다. **무엇이든** 일치 시키려면 *param* 바로 뒤에 괄호 안에 정규식을 추가하여 맞춤 *param* 정규식을 사용할 수 있습니다.
 

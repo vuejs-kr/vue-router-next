@@ -15,6 +15,3 @@ Vue Router 는 [Vue.js](http://v3.vuejs.org) 를 위한 공식 라우터 입니�
 
 [시작하기](./guide/) 또는 [playground](https://github.com/vuejs/vue-router-next/tree/master/playground) 에서 시작해보세요.([`README.md`](https://github.com/vuejs/vue-router-next) 참고).
 
-<homesponsors></homesponsors>
-
-&lt;script setup&gt; import HomeSponsors from './.vitepress/components/HomeSponsors.vue' &lt;/script&gt;

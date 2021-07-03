@@ -30,7 +30,9 @@ const routes = [
 
 이제 `/25` 하면 `/:orderId` 와 일치하고 다른 항목으로 이동하면 `/:productName` 과 일치합니다. `routes` 배열의 순서는 중요하지 않습니다!
 
-:::tip 실제로 JavaScript에서 백 슬래시 문자를 문자열로 전달하기 위해 <code>\d</code> ( `\d` )에서했던 것처럼 <strong>백 슬래시 ( <code data-md-type="codespan">\</code> )를 이스케이프해야합니다.</strong> :::
+:::tip 
+실제로 JavaScript에서 백 슬래시 문자를 문자열로 전달하기 위해 <code>\d</code> ( `\d` )에서했던 것처럼 <strong>백 슬래시 ( <code data-md-type="codespan">\</code> )를 이스케이프해야합니다.</strong> 
+:::
 
 ## 반복되는 params
 

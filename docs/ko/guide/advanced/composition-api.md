@@ -1,10 +1,10 @@
-# Vue Router and the Composition API
+# Vue Router 와 컴포지션  API
 
-The introduction of `setup` and Vue's [Composition API](https://v3.vuejs.org/guide/composition-api-introduction.html), open up new possibilities but to be able to get the full potential out of Vue Router, we will need to use a few new functions to replace access to `this` and in-component navigation guards.
+Vue에서 `setup` 및  [Composition API](https://v3.vuejs.org/guide/composition-api-introduction.html) 이 도입되어서 새로운 가능성이 열렸습니다.  vue 라우터에서 이를 최대한 활용하기 위해서 `this` 를 대신하여 컴포넌트간의 네비게이션을 수행하는 새로운 함수를 사용해야 합니다.
 
-## Accessing the Router and current Route inside `setup`
+## `setup` 안에서 라우터와 라우트(경로)에 접근하기
 
-Because we don't have access to `this` inside of `setup`, we cannot directly access `this.$router` or `this.$route` anymore. Instead we use the `useRouter` function:
+컴포지션 API 기반의 `setup` 함수 안에서는  `this`를 사용하면 않됩니다. 따라서  `this.$router` 나  `this.$route`를 사용할수 없습니다.  그대신 `useRouter` 함수를 사용해야 합니다.
 
 ```js
 import { useRouter, useRoute } from 'vue-router'
@@ -26,7 +26,7 @@ export default {
 }
 ```
 
-The `route` object is a reactive object, so any of its properties can be watched and you should **avoid watching the whole `route`** object. In most scenarios, you should directly watch the param you are expecting to change
+`route` 객체는 반응형 객체입니다. 라우트 객체의 속성을 watch하는 것은 좋지만, <strong data-md-type="double_emphasis">`route` 자체를 watch 하는 것은 피하는게 좋습니다.</strong> 대부분의 시나리오에서는 변경될 파라메터를 직접 watch할수 있습니다.
 
 ```js
 import { useRoute } from 'vue-router'
@@ -50,9 +50,9 @@ export default {
 
 Note we still have access to `$router` and `$route` in templates, so there is no need to return `router` or `route` inside of `setup`.
 
-## Navigation Guards
+## 네비게이션 가드
 
-While you can still use in-component navigation guards with a `setup` function, Vue Router exposes update and leave guards as Composition API functions:
+예전 방식대로 컴포넌트 내 네비게이션 가드 선언 방식을 사용할수도 있습니다. 하지만 `setup` 내에서  컴포지션 API 함수를 이용해 네비게이션 가드를 이용할수 있습니다.
 
 ```js
 import { onBeforeRouteLeave, onBeforeRouteUpdate } from 'vue-router'
@@ -60,20 +60,20 @@ import { ref } from 'vue'
 
 export default {
   setup() {
-    // same as beforeRouteLeave option with no access to `this`
+    // `this` 업이도 beforeRouteLeave 옵션을 사용할수 있습니다.
     onBeforeRouteLeave((to, from) => {
       const answer = window.confirm(
         'Do you really want to leave? you have unsaved changes!'
       )
-      // cancel the navigation and stay on the same page
+      // 네비게이션을 취소하고 현재 페이지에 머무를수 있습니다.
       if (!answer) return false
     })
 
     const userData = ref()
 
-    // same as beforeRouteUpdate option with no access to `this`
+    // `this` 없이도 onBeforeRouteUpdate 옵션을 지정할수 있습니다.
     onBeforeRouteUpdate(async (to, from) => {
-      // only fetch the user if the id changed as maybe only the query or the hash changed
+      //URL상의 쿼리나 해시가 변경되어 사용자 ID가 변경되었을때만 가져오게 한다.
       if (to.params.id !== from.params.id) {
         userData.value = await fetchUser(to.params.id)
       }
@@ -86,7 +86,7 @@ Composition API guards can also be used in any component rendered by `<router-vi
 
 ## `useLink`
 
-Vue Router exposes the internal behavior of RouterLink as a Composition API function. It gives access the same properties as the [`v-slot` API](../../api/#router-link-s-v-slot):
+Vue Router는 RouterLink의 내부 동작을 Composition API 함수로 노출합니다. [`v-slot` API](../../api/#router-link-s-v-slot) 와 동일한 속성에 접근 할수 있습니다.
 
 ```js
 import { RouterLink, useLink } from 'vue-router'

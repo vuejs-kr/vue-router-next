@@ -25,5 +25,5 @@ footer: MIT Licensed | Copyright © 2014-present Evan You, Eduardo San Martin Mo
 <HomeSponsors />
 
 <script setup>
-import HomeSponsors from './.vitepress/components/HomeSponsors.vue'
+import HomeSponsors from '../.vitepress/components/HomeSponsors.vue'
 </script>

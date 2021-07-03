@@ -2,7 +2,9 @@
 
 대부분의 애플리케이션은 <a>Dynamic Route Matching</a> 에서 방금 본 `/about` 과 <code>/users/:userId</code> 와 같은 동적 경로를 사용하지만 Vue Router는 훨씬 더 많은 것을 제공합니다!
 
-:::tip 단순성을 위해 모든 경로 레코드 <code>path</code> 값에 초점을 맞추기 <strong><code data-md-type="codespan">component</code> 속성을 생략합니다.</strong> :::
+:::tip 
+단순성을 위해 모든 경로 레코드 <code>path</code> 값에 초점을 맞추기 <strong><code data-md-type="codespan">component</code> 속성을 생략합니다.</strong> 
+:::
 
 ## params에 정규 표현식 사용하기
 

@@ -17,7 +17,7 @@ features:
   - title: 🎚 스크롤 제어
     details: 모든 페이지에서 스크롤 위치를 정확하게 제어합니다.
   - title: 🌐 자동 인코딩
-    details: 코드에 유니 코드 문자 (你好)를 직접 사용합니다
+    details: 코드에 유니 코드 문자를 직접 사용합니다
 
 footer: MIT Licensed | Copyright © 2014-present Evan You, Eduardo San Martin Morote
 ---

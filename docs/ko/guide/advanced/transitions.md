@@ -12,11 +12,11 @@ route 컴포넌트에서 트랜지션을 사용하고 탐색을 애니메이션 
 </router-view>
 ```
 
-[All transition APIs](https://v3.vuejs.org/guide/transitions-enterleave.html) work the same here.
+[Vue의 모든 transition APIs](https://v3.vuejs.org/guide/transitions-enterleave.html) 와 동일하게 동작
 
 ## 경로별 트랜지션(Per-Route Transition)
 
-The above usage will apply the same transition for all routes. If you want each route's component to have different transitions, you can instead combine [meta fields](./meta.md) and a dynamic `name` on `<transition>`:
+위의 사용법은 모든 경로에 동일한 트랜지션을 적용합니다. 각 경로의 구성 요소가 서로 다른 트랜지션을 갖도록 하려면,  <code>&lt;transition&gt;</code> 에서 <a>메타 필드</a> 와 동적 `name` 을 결합 할 수 있습니다.
 
 ```js
 const routes = [

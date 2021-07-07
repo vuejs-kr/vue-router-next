@@ -3,7 +3,7 @@ home: true
 
 heroImage: /logo.png
 actionText: 시작하기 →
-actionLink: /installation.html
+actionLink: /ko/installation.html
 
 features:
   - title: 🛣 강력한 경로 표현 문법
@@ -22,3 +22,8 @@ features:
 footer: MIT Licensed | Copyright © 2014-present Evan You, Eduardo San Martin Morote
 ---
 
+<HomeSponsors />
+
+<script setup>
+import HomeSponsors from '../.vitepress/components/HomeSponsors.vue'
+</script>

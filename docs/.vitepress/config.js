@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === 'production') {
 
 /** @type {UserConfig} */
 const config = {
-  lang: 'en-US',
+  lang: 'en',
   title: 'Vue Router',
   description: 'The official router for Vue.js.',
   head,
@@ -310,7 +310,7 @@ const config = {
         ],
       },
       '/ko/': {
-        lang: 'ko-KRN',
+        lang: 'ko-KR',
         label: '한국어',
         selectText: '언어',
         title: 'Vue Router',

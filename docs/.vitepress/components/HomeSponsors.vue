@@ -23,6 +23,7 @@ import sponsors from './sponsors.json'
 const translations = {
   'en-US': 'Become a Sponsor!',
   'zh-CN': '成为赞助者！',
+  'ko-KR': '스폰서가 되어 주세요!',
 }
 </script>
 

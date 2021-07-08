@@ -352,23 +352,23 @@ const config = {
                 link: '/ko/guide/',
               },
               {
-                text: '동적 경로 매칭',
+                text: '동적 라우트 매칭',
                 link: '/ko/guide/essentials/dynamic-matching.html',
               },
               {
-                text: '경로 매칭 문법',
+                text: '라우트 매칭 문법',
                 link: '/ko/guide/essentials/route-matching-syntax.html',
               },
               {
-                text: '중첩 경로',
+                text: '중첩된 라우트',
                 link: '/ko/guide/essentials/nested-routes.html',
               },
               {
-                text: '네비게이션',
+                text: '프로그래밍 방식 네비게이션',
                 link: '/ko/guide/essentials/navigation.html',
               },
               {
-                text: '이름을 가지는 경로',
+                text: '이름을 가지는 라우트',
                 link: '/ko/guide/essentials/named-routes.html',
               },
               {
@@ -380,11 +380,11 @@ const config = {
                 link: '/ko/guide/essentials/redirect-and-alias.html',
               },
               {
-                text: 'props 전달하기',
+                text: '라우트 컴포넌트에 속성 전달',
                 link: '/ko/guide/essentials/passing-props.html',
               },
               {
-                text: '히스토리 모드',
+                text: 'HTML5 히스토리 모드',
                 link: '/ko/guide/essentials/history-mode.html',
               },
             ],
@@ -398,7 +398,7 @@ const config = {
                 link: '/ko/guide/advanced/navigation-guards.html',
               },
               {
-                text: '경로 메타 필드',
+                text: '라우트 메타 필드',
                 link: '/ko/guide/advanced/meta.html',
               },
               {
@@ -414,11 +414,11 @@ const config = {
                 link: '/ko/guide/advanced/transitions.html',
               },
               {
-                text: '스크롤',
+                text: '스크롤 동작',
                 link: '/ko/guide/advanced/scroll-behavior.html',
               },
               {
-                text: '지연 로딩',
+                text: '지연된 로딩',
                 link: '/ko/guide/advanced/lazy-loading.html',
               },
               {
@@ -426,7 +426,7 @@ const config = {
                 link: '/ko/guide/advanced/extending-router-link.html',
               },
               {
-                text: '네비게이션 실패',
+                text: '네비게이션 실패 처리하기',
                 link: '/ko/guide/advanced/navigation-failures.html',
               },
               {

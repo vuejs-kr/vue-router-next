@@ -1,6 +1,9 @@
 # 트랜지션(Transitions)
 
-<vueschoollink href="https://vueschool.io/lessons/route-transitions" title="Learn about route transitions"></vueschoollink>
+<VueSchoolLink 
+  href="https://vueschool.io/lessons/route-transitions"
+  title="Learn about route transitions"
+/>
 
 route 컴포넌트에서 트랜지션을 사용하고 탐색을 애니메이션 처리 하려면 [v-slot API](../../api/#router-view-s-v-slot) 를 사용합니다.
 

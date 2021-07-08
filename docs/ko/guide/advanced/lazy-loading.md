@@ -1,6 +1,9 @@
 # 경로 지연 로딩
 
-<vueschoollink href="https://vueschool.io/lessons/lazy-loading-routes-vue-cli-only" title="Learn about lazy loading routes"></vueschoollink>
+<VueSchoolLink 
+  href="https://vueschool.io/lessons/lazy-loading-routes-vue-cli-only"
+  title="Learn about lazy loading routes"
+/>
 
 번들러를 사용하여 앱을 빌드하면 JavaScript 번들이 상당히 커져 페이지 로드 시간에 영향을 미칠 수 있습니다. 각 경로의 구성 요소를 별도의 청크로 분할하고 경로를 방문 할 때 만 로드 할 수 있다면 더 효율적일 것입니다.
 

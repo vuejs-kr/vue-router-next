@@ -8,7 +8,7 @@
 <router-view class="view right-sidebar" name="RightSidebar"></router-view>
 ```
 
-뷰는 구성 요소를 사용하여 렌더링되므로 여러 뷰에는 동일한 경로에 대해 여러 구성 요소가 필요합니다. `components` ( **s 사용** ) 옵션을 사용해야합니다.
+뷰는 컴포넌트를 사용하여 렌더링되므로 여러 뷰에는 동일한 경로에 대해 여러 컴포넌트가 필요합니다. `components` ( **s 사용** ) 옵션을 사용해야합니다.
 
 ```js
 const router = createRouter({
@@ -50,7 +50,7 @@ const router = createRouter({
 - `UserSettings` 는 부모 뷰 컴포넌트입니다.
 - `UserEmailsSubscriptions` , `UserProfile` , `UserProfilePreview` 는 중첩 된 뷰 컴포넌트입니다.
 
-**참고** : *HTML / CSS가 이러한 레이아웃을 표현하고 사용 된 구성 요소에 초점을 맞추기 위해 어떻게 생겼는지 잊어 버리겠습니다.*
+**참고** : *HTML / CSS가 이러한 레이아웃을 표현하고 사용 된 컴포넌트에 초점을 맞추기 위해 어떻게 생겼는지 잊어 버리겠습니다.*
 
 `UserSettings`의  `<template>` 섹션은 다음과 같습니다.
 

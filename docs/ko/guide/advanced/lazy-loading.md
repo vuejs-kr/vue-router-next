@@ -5,7 +5,7 @@
   title="Learn about lazy loading routes"
 />
 
-번들러를 사용하여 앱을 빌드하면 JavaScript 번들이 상당히 커져 페이지 로드 시간에 영향을 미칠 수 있습니다. 각 경로의 구성 요소를 별도의 청크로 분할하고 경로를 방문 할 때 만 로드 할 수 있다면 더 효율적일 것입니다.
+번들러를 사용하여 앱을 빌드하면 JavaScript 번들이 상당히 커져 페이지 로드 시간에 영향을 미칠 수 있습니다. 각 경로의 컴포넌트를 별도의 청크로 분할하고 경로를 방문 할 때 만 로드 할 수 있다면 더 효율적일 것입니다.
 
 Vue Router는 기본적으로 [동적 임포트(Dynamic import)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Dynamic_Imports) 지원하므로 정적 임포트(Static Import)를 동적 임포트(Dynamic import)로 바꿀 수 있습니다.
 
@@ -21,7 +21,7 @@ const router = createRouter({
 })
 ```
 
-`component` (및 `components` ) 옵션은 구성 요소의 약속을 반환하는 함수를 허용하며 Vue Router **는 처음 페이지에 들어갈 때만 가져온** 다음 캐시 된 버전을 사용합니다. 즉, Promise를 반환하는 한 더 복잡한 함수를 가질 수도 있습니다.
+`component` (및 `components` ) 옵션은 컴포넌트의 약속을 반환하는 함수를 허용하며 Vue Router **는 처음 페이지에 들어갈 때만 가져온** 다음 캐시 된 버전을 사용합니다. 즉, Promise를 반환하는 한 더 복잡한 함수를 가질 수도 있습니다.
 
 ```js
 const UserDetails = () =>
@@ -40,7 +40,7 @@ Babel을 사용할 때 Babel이 구문을 올바르게 구문 분석 할 수 있
 
 ## 동일한 청크에서 컴포넌트 그룹화
 
-때로는 동일한 경로에 중첩 된 모든 구성 요소를 동일한 비동기 청크로 그룹화 할 수 있습니다. 이를 위해서는 특별한 주석 구문을 사용하여 청크 이름을 제공하여 [명명 된 청크를 사용해야합니다 (webpack&gt; 2.4 필요).](https://webpack.js.org/guides/code-splitting/#dynamic-imports)
+때로는 동일한 경로에 중첩 된 모든 컴포넌트를 동일한 비동기 청크로 그룹화 할 수 있습니다. 이를 위해서는 특별한 주석 구문을 사용하여 청크 이름을 제공하여 [명명 된 청크를 사용해야합니다 (webpack&gt; 2.4 필요).](https://webpack.js.org/guides/code-splitting/#dynamic-imports)
 
 ```js
 const UserDetails = () =>

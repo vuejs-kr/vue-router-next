@@ -67,7 +67,7 @@ router.beforeEach((to, from, next) => {
 
 ## 전역 리졸빙 가드(Global Resolve Guards)
 
-`router.beforeResolve` 로 글로벌 가드를 등록 할 수 있습니다. <strong>이는 모든 탐색</strong> 에서 트리거되기 때문에 <code>router.beforeEach</code> 와 유사하지만 탐색이 확인되기 직전에 **모든 구성 요소 가드 및 비동기 경로 구성 요소가 해결 된 후** 해결 가드가 호출됩니다. [다음은 사용자 지정 메타](./meta.md) 속성 `requiresCamera` 정의한 경로에 대해 사용자가 카메라에 대한 액세스 권한을 부여했는지 확인하는 예입니다.
+`router.beforeResolve` 로 글로벌 가드를 등록 할 수 있습니다. <strong>이는 모든 탐색</strong> 에서 트리거되기 때문에 <code>router.beforeEach</code> 와 비슷해 보이지만  네비게이션 이동이 확정되기  직전에 **모든 컴포넌트 가드 및 비동기 경로 컴포넌트가 의존성 해소  된 후에** 의존성 해소 가드(resolve guard)가 호출됩니다. [ 다음은 사용자 지정 메타](./meta.md) 속성 `requiresCamera` 정의한 경로에 대해 사용자가 카메라에 대한 액세스 권한을 부여했는지 확인하는 예입니다.
 
 ```js
 router.beforeResolve(async to => {
@@ -91,9 +91,9 @@ router.beforeResolve(async to => {
 
 <!-- TODO: how to combine with [`meta` fields](./meta.md) to create a [generic fetching mechanism](#TODO). -->
 
-## Global After Hooks
+## 전역 후행 훅(Global After Hooks)
 
-You can also register global after hooks, however unlike guards, these hooks do not get a `next` function and cannot affect the navigation:
+전역 후행 훅(Global after hook)은 가드와 달리 `next` 함수를 넘겨 받지 않기 때문에 탐색 결정에 영향을 주지 못합니다.
 
 ```js
 router.afterEach((to, from) => {
@@ -103,9 +103,9 @@ router.afterEach((to, from) => {
 
 <!-- TODO: maybe add links to examples -->
 
-They are useful for analytics, changing the title of the page, accessibility features like announcing the page and many other things.
+분석, 페이지 제목 변경, 페이지 소개 같은  접근성 기능 및 기타 여러 가지에 유용합니다.
 
-They also reflect [navigation failures](./navigation-failures.md) as the third argument:
+[네비게이션 실패](./navigation-failures.md) 를 세 번째 인자로 받을수 있습니다.
 
 ```js
 router.afterEach((to, from, failure) => {
@@ -113,11 +113,11 @@ router.afterEach((to, from, failure) => {
 })
 ```
 
-Learn more about navigation failures on [its guide](./navigation-failures.md).
+[가이드](./navigation-failures.md) 에서 탐색 실패에 대해 자세히 알아보세요.
 
-## Per-Route Guard
+## 경로별 가드(Per-Route Guard)
 
-You can define `beforeEnter` guards directly on a route's configuration object:
+경로 설정 객체에 바로 `beforeEnter` 가드를 정의 할 수 있습니다.
 
 ```js
 const routes = [
@@ -132,9 +132,9 @@ const routes = [
 ]
 ```
 
-`beforeEnter` guards **only trigger when entering the route**, they don't trigger when the `params`, `query` or `hash` change e.g. going from `/users/2` to `/users/3` or going from `/users/2#info` to `/users/2#projects`. They are only triggered when navigating **from a different** route.
+`beforeEnter` 가드 **는 경로에 진입할때만 실행되며 ** `params` , `query` 또는 `hash`가 변경될때는 실행 되지 않습니다.(예 : `/users/2` 에서 `/users/3` 하거나 `/users/2#info` 에서 `/users/2#projects` . **&nbsp;다른** 경로에서 이 경로로 네비게이션 해올때만 실행됩니다.
 
-You can also pass an array of functions to `beforeEnter`, this is useful when reusing guards for different routes:
+`beforeEnter` 에 함수 배열을 전달할 수도 있습니다. 이는 다른 경로에 대해 가드를 재사용 할 때 유용합니다.
 
 ```js
 function removeQueryParams(to) {
@@ -160,15 +160,15 @@ const routes = [
 ]
 ```
 
-Note it is possible to achieve a similar behavior by using [route meta fields](./meta.md) and [global navigation guards](#global-before-guards).
+[경로 메타 필드](./meta.md) 와 [전역 내비게이션 가드](#global-before-guards) 를 사용하여 유사한 동작을 달성 할 수 있습니다.
 
-## In-Component Guards
+## 컴포넌트 내부 가드(In-Component Guards)
 
-Finally, you can directly define route navigation guards inside route components (the ones passed to the router configuration)
+마지막으로 경로 컴포넌트(라우터 설정에 전달 된 컴포넌트) 내에서 경로 네비게이션 가드를 직접 정의 할 수 있습니다.
 
-### Using the options API
+### 옵션 API 사용
 
-You can add the following options to route components:
+다음 옵션을 추가하여 구성 요소를 라우팅 할 수 있습니다.
 
 - `beforeRouteEnter`
 - `beforeRouteUpdate`

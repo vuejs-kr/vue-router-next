@@ -75,7 +75,7 @@ Vue 라우터는 Vue 생태계의 일부이며 MIT가 허가한 오픈 소스 �
 
 ## 기여하기
 
-[Contributing Guid] (https://github.com/vuejs/vue-router-next/blob/master/.github/contributing.md)를 참조하세요.
+[Contributing Guid](https://github.com/vuejs/vue-router-next/blob/master/.github/contributing.md)를 참조하세요.
 
 ## 특별한 감사
 

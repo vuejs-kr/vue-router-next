@@ -1,18 +1,18 @@
 # vue-router-next [![release candidate](https://img.shields.io/npm/v/vue-router/next.svg)](https://www.npmjs.com/package/vue-router/v/next) [![CircleCI](https://badgen.net/circleci/github/vuejs/vue-router-next/master)](https://circleci.com/gh/vuejs/vue-router-next)
 
-> This is the repository for Vue Router 4 (for Vue 3)
+> 여기는 Vue Router 4에 대한 저장소입니다. (Vue 3를 위한)
 
-<h2 align="center">Supporting Vue Router</h2>
+<h2 align="center">Vue Router 지원 </h2>
 
-Vue Router is part of the Vue Ecosystem and is an MIT-licensed open source project with its ongoing development made possible entirely by the support of Sponsors. If you would like to become a sponsor, please consider:
+Vue 라우터는 Vue 생태계의 일부이며 MIT가 허가한 오픈 소스 프로젝트로, 전적으로 스폰서의 지원을 통해 개발되고 있습니다. 후원자가 되고 싶다면 다음을 고려하십시오.
 
-- [Become a Sponsor on GitHub](https://github.com/sponsors/posva)
-- [One-time donation via PayPal](https://paypal.me/posva)
+- [GitHub의 후원자가 되기](https://github.com/sponsors/posva)
+- [PayPal을 통한 일회성 기부](https://paypal.me/posva)
 
 <!-- <h3 align="center">Special Sponsors</h3> -->
 <!--special start-->
 
-<h4 align="center">Gold Sponsors</h4>
+<h4 align="center">Gold 스폰서</h4>
 
 <p align="center">
   <a href="https://passionatepeople.io" target="_blank" rel="noopener noreferrer">
@@ -24,7 +24,7 @@ Vue Router is part of the Vue Ecosystem and is an MIT-licensed open source proje
   </a>
 </p>
 
-<h4 align="center">Silver Sponsors</h4>
+<h4 align="center">Silver 스폰서</h4>
 
 <p align="center">
   <a href="https://www.vuemastery.com" target="_blank" rel="noopener noreferrer">
@@ -44,7 +44,7 @@ Vue Router is part of the Vue Ecosystem and is an MIT-licensed open source proje
   </a>
 </p>
 
-<h4 align="center">Bronze Sponsors</h4>
+<h4 align="center">Bronze 스폰서</h4>
 
 <p align="center">
   <a href="https://storyblok.com" target="_blank" rel="noopener noreferrer">
@@ -58,29 +58,29 @@ Vue Router is part of the Vue Ecosystem and is an MIT-licensed open source proje
 
 ---
 
-Get started with the [documentation](https://next.router.vuejs.org).
+이 [문서](https://next.router.vuejs.org)로 시작하세요.
 
-## Quickstart
+## 빠른시작
 
-- Via CDN: `<script src="https://unpkg.com/vue-router@4"></script>`
-- In-browser playground on [CodeSandbox](https://codesandbox.io/s/vue-router-4-reproduction-hb9lh)
-- Add it to an existing Vue Project:
+- CDN을 통해: `<script src="https://unpkg.com/vue-router@4"></script>`
+- [CodeSandbox](https://codesandbox.io/s/vue-router-4-reproduction-hb9lh)의 브라우저 내 playground
+- 기존 Vue 프로젝트에 추가:
   ```bash
   npm install vue-router@4
   ```
 
-## Changes from Vue Router 3
+## Vue Router 3에서의 변경사항
 
-Please consult the [Migration Guide](https://next.router.vuejs.org/guide/migration/).
+[Migration Guide](https://next.router.vuejs.org/guide/migration/)를 참조하세요.
 
-## Contributing
+## 기여하기
 
-See [Contributing Guide](https://github.com/vuejs/vue-router-next/blob/master/.github/contributing.md).
+[Contributing Guid](https://github.com/vuejs/vue-router-next/blob/master/.github/contributing.md)를 참조하세요.
 
-## Special Thanks
+## 특별한 감사
 
 <a href="https://www.browserstack.com">
   <img src="https://github.com/vuejs/vue-router/raw/dev/assets/browserstack-logo-600x315.png" height="80" title="BrowserStack Logo" alt="BrowserStack Logo" />
 </a>
 
-Special thanks to [BrowserStack](https://www.browserstack.com) for letting the maintainers use their service to debug browser specific issues.
+메인테이너가가 서비스를 사용하여 브라우저별 문제를 디버깅 할 수 있도록 해 준 [BrowserStack](https://www.browserstack.com)에 특별히 감사드립니다.
